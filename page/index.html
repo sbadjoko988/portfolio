@@ -11,16 +11,20 @@
 <body>
     <header class="site-header">
         <a class="wordmark" href="#accueil" aria-label="Samuel Badjoko, accueil">SB<span>.</span></a>
-        <span class="header-label">Portfolio personnel</span>
+        <nav class="site-nav" aria-label="Navigation principale">
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <main id="accueil">
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-copy">
-                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Développeur web</p>
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Bonjour, je suis</p>
                 <h1 id="hero-title">Samuel<br><span>Badjoko.</span></h1>
+                <p class="hero-role">Développeur web</p>
                 <p class="hero-description">Passionné par la création web, je donne vie aux idées à travers des sites clairs, utiles et agréables à parcourir.</p>
-                <a class="contact-link" href="mailto:samuelbadjoko@gmail.com">Me contacter <span aria-hidden="true">↗</span></a>
+                <a class="contact-link" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
             </div>
 
             <figure class="portrait">
@@ -28,6 +32,22 @@
                 <figcaption>Samuel Badjoko <span>Développeur web</span></figcaption>
             </figure>
             <p class="hero-index" aria-hidden="true">01 <span>/</span> 03</p>
+        </section>
+
+        <section class="content-section about-section" id="apropos" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="section-kicker">02 <span>/</span> À propos</p>
+                <h2 id="about-title">Le web, comme<br><span>terrain de création.</span></h2>
+            </div>
+            <p class="about-copy">Le développement web me permet d’allier créativité et réflexion. J’aime imaginer des expériences en ligne claires, accessibles et agréables à utiliser, où chaque détail a sa place.</p>
+        </section>
+
+        <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+            <div>
+                <p class="section-kicker">03 <span>/</span> Contact</p>
+                <h2 id="contact-title">Une idée en tête ?</h2>
+            </div>
+            <a class="contact-link" href="mailto:samuelbadjoko@gmail.com">Écrivez-moi <span aria-hidden="true">↗</span></a>
         </section>
     </main>
 
